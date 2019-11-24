@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.smsproject.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ed4340">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_marginLeft="15dp"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:id="@+id/backButton"
+            android:src="@drawable/back_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titleSms"
+            android:id="@+id/textViewTitle"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:id="@+id/imageButtonProfile"
+            android:background="#00000000"
+            android:src="@drawable/profile_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:background="#ed4340">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageViewimage"
+            android:src="@drawable/image"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="36dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ime / Broj"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:id="@+id/textViewNumber"
+            android:layout_above="@+id/imageViewimage"
+            android:layout_toRightOf="@+id/imageViewimage"
+            android:layout_toEndOf="@+id/imageViewimage"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:id="@+id/textViewMessageReceive"
+            android:layout_below="@id/textViewNumber"
+            android:layout_alignLeft="@+id/imageViewimage"
+            android:layout_alignStart="@+id/textViewNumber" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:background="#eeeeef"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#9a9a99"
+                android:text="@string/newmessage"
+                android:id="@+id/textViewNewMessage"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageSend"
+                android:src="@drawable/button_send"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="6"
+            android:background="#ffffff"
+            android:weightSum="1"
+            android:elevation="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Unesi Poruku..."
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:background="#ffffff"
+                android:id="@+id/editTextMessage"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
